@@ -1,0 +1,26 @@
+main-footer {
+  text-align: center;
+  background: #202a44;
+  font-size: 1.0rem;
+}
+.main-footer ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+}
+.main-footer a {
+  text-decoration: none;
+  color: #ffc30B;
+  font-weight: 600;
+}
+.main-footer img {
+  height: 50px;
+  width: 50px;
+}
+.main-footer a:hover, .site-nav a.active {
+  color: #fff;
+  text-decoration: underline;
+}
