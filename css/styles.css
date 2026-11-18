@@ -8,9 +8,9 @@ body {
   color: #253238;
 }
 header {
-  background: linear-gradient(120deg, #04AA6D, #058457);
+  background: linear-gradient(120deg, #202a44, #003366);
   color: #fff;
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 main {
@@ -27,11 +27,28 @@ section {
 }
 section h2 {
   margin-top: 0;
-  color: #04AA6D;
+  color: #202a44;
 }
 footer {
-  padding: 24px;
+  padding: 28px;
   text-align: center;
-  background: #e8edf4;
+  background: #202a44;
   font-size: 0.9rem;
+  color: #ffc30B;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 12px 20px;
+  background: #000;
+  color: #fff;
 }
