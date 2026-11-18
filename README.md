@@ -2,6 +2,12 @@
 
 
 
+### How to Open
+
+Open the index.html 
+
+
+
 ### Project Goals
 
 1. Learn HTML and CSS basics
