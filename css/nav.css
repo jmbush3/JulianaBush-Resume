@@ -1,0 +1,27 @@
+main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 18px clamp(16px, 6vw, 48px);
+  background: #202a44;
+  font-size: 1.0rem;
+}
+.main-nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-nav a {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #ffc30B;
+  font-weight: 600;
+}
+.main-nav a:hover, .site-nav a.active {
+  background: #FFF;
+  color: #000;
+}
