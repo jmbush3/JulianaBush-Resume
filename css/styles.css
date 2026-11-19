@@ -49,3 +49,25 @@ section h2 {
   background: #000;
   color: #fff;
 }
+/* ACCORDION DESIGN */
+.accordion {
+  padding: 20px 20px 0px 20px;
+  height: auto;
+}
+.accordion-content {
+  padding: 0px 10px 10px 10px;
+}
+.accordion detail {
+  border: 1px solid #ffc30B;
+  border-radius: 3px;
+}
+.accordion summary {
+  background-color: #ffc30B;
+  border-radius: 3px;
+  color: #fff;
+  list-style: none;
+  padding-left: 10px;
+}
+.accordion summary::-webkit-details-marker {
+  display: none; /* REMOVE DROP-DOWN ARROW SYMBOL */
+}
