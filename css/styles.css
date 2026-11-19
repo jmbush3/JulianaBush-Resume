@@ -1,3 +1,4 @@
+/* BASIC WEB ELEMENT DESIGNS */
 * {
   box-sizing: border-box;
 }
@@ -7,6 +8,7 @@ body {
   background: #f4f7fb;
   color: #253238;
 }
+/* MAJOR LANDMARK DESIGNS */
 header {
   background: linear-gradient(120deg, #202a44, #003366);
   color: #fff;
@@ -25,24 +27,19 @@ section {
   margin-bottom: 24px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
+/* HEADING DESIGNS */
 section h2 {
   margin-top: 0;
   color: #202a44;
 }
-footer {
-  padding: 28px;
-  text-align: center;
-  background: #202a44;
-  font-size: 0.9rem;
-  color: #ffc30B;
-}
+/* SKIP LINK DESIGN */
 .skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute; /* NEEDED TO STAY HIDDEN */
+  overflow: hidden; /* NEEDED TO STAY HIDDEN */
+  margin: -1px;
   width: 1px;
   height: 1px;
-  overflow: hidden;
 }
 .skip-link:focus {
   position: static;

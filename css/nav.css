@@ -1,3 +1,4 @@
+/* MAIN NAVIGATION DESIGN */
 main-nav {
   display: flex;
   align-items: center;
@@ -6,6 +7,7 @@ main-nav {
   background: #202a44;
   font-size: 1.0rem;
 }
+/* LIST DESIGN */
 .main-nav ul {
   display: flex;
   gap: 16px;
@@ -13,6 +15,7 @@ main-nav {
   padding: 0;
   margin: 0;
 }
+/* LINK DESIGN */
 .main-nav a {
   display: block;
   padding: 12px 20px;
@@ -21,7 +24,8 @@ main-nav {
   color: #ffc30B;
   font-weight: 600;
 }
-.main-nav a:hover, .site-nav a.active {
-  background: #FFF;
+/* LINK DESIGN FOR HOVER AND KEYBOARD USERS */
+.main-nav a:hover, .main-nav a:focus-visible, .main-nav a.active {
   color: #000;
+  background: #fff;
 }

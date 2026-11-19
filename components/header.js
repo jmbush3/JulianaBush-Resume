@@ -2,6 +2,7 @@ class MainHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <header>
+	<a class="skip-link" href="#main">Skip to Content</a>
         <nav class="main-nav" aria-label="Main Navigation">
 	 <ul>
           <li><a href="index.html">Home</a></li>

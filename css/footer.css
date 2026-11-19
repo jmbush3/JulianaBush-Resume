@@ -1,3 +1,11 @@
+/* REPEATED FOOTER DESIGN */
+footer {
+  padding: 28px;
+  text-align: center;
+  background: #202a44;
+  font-size: 0.9rem;
+  color: #ffc30B;
+}
 main-footer {
   text-align: center;
   background: #202a44;
@@ -20,7 +28,10 @@ main-footer {
   height: 50px;
   width: 50px;
 }
-.main-footer a:hover, .site-nav a.active {
-  color: #fff;
+.main-footer a:hover {
   text-decoration: underline;
+  color: #fff;
+}
+.main-footer a:focus-visible {
+  background: transparent;
 }
