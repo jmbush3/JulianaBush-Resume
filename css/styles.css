@@ -9,16 +9,6 @@ body {
   background: #f4f7fb;
   color: #253238;
 }
-/* LINK DESIGN */
-a {
-  text-decoration: underline;
-  color: #202a44;
-  border-radius: 4px;
-}
-a:focus, a:active, a:focus-visible, a:hover {
-  background-color: #ffc30B;
-  padding: 2px;
-}
 /* MAJOR LANDMARK DESIGNS */
 header {
   background: linear-gradient(120deg, #202a44, #003366);
@@ -30,6 +20,16 @@ main {
   max-width: 960px;
   margin: 0 auto;
   padding: 40px 20px;
+}
+/* LINK DESIGN */
+main a {
+  text-decoration: underline;
+  color: #202a44;
+  border-radius: 4px;
+}
+main a:focus, main a:active, main a:focus-visible, main a:hover {
+  background-color: #ffc30B;
+  padding: 2px;
 }
 section {
   background: #fff;
