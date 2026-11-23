@@ -9,6 +9,16 @@ body {
   background: #f4f7fb;
   color: #253238;
 }
+/* LINK DESIGN */
+a {
+  text-decoration: underline;
+  color: #202a44;
+  border-radius: 4px;
+}
+a:focus, a:active, a:focus-visible, a:hover {
+  background-color: #ffc30B;
+  padding: 2px;
+}
 /* MAJOR LANDMARK DESIGNS */
 header {
   background: linear-gradient(120deg, #202a44, #003366);
@@ -49,38 +59,4 @@ section h2 {
   padding: 12px 20px;
   background: #000;
   color: #fff;
-}
-/* ACCORDION DESIGN */
-details {
-  margin-bottom: 15px;
-  border-radius: 3px;
-  interpolate-size: allow-keywords;
-  overflow: hidden;
-}
-.accordion-content {
-  border: 1px solid #ffc30B;
-  transition: height 0.5s ease;
-  height: 0;
-  margin: 0;
-}
-.accordion details[open] .accordion-content {
-  height: auto;
-}
-summary {
-  cursor: pointer; /* CHANGE CURSOR TO POINTER (LOOK CLICKABLE) */
-  border-radius: 3px;
-  list-style: none;
-  background: #ffc30B;
-  padding: 0 1rem;
-  border-left: 3px solid #202a44;
-  margin: 0;
-}
-.accordion summary {
-  transition: background-color 0.2s ease, padding-left 0.2s ease;
-}
-.accordion summary:hover {
-  padding-left: 1.4rem;
-}
-.accordion summary::-webkit-details-marker {
-  display: none; /* REMOVE DROP-DOWN ARROW SYMBOL */
 }
