@@ -1,6 +1,7 @@
 /* BASIC WEB ELEMENT DESIGNS */
 * {
   box-sizing: border-box;
+  line-height: 1.5;
 }
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
@@ -50,23 +51,35 @@ section h2 {
   color: #fff;
 }
 /* ACCORDION DESIGN */
-.accordion {
-  padding: 20px 20px 0px 20px;
-  height: auto;
+details {
+  margin-bottom: 15px;
+  border-radius: 3px;
+  interpolate-size: allow-keywords;
+  overflow: hidden;
 }
 .accordion-content {
-  padding: 0px 10px 10px 10px;
-}
-.accordion detail {
   border: 1px solid #ffc30B;
+  transition: height 0.5s ease;
+  height: 0;
+  margin: 0;
+}
+.accordion details[open] .accordion-content {
+  height: auto;
+}
+summary {
+  cursor: pointer; /* CHANGE CURSOR TO POINTER (LOOK CLICKABLE) */
   border-radius: 3px;
+  list-style: none;
+  background: #ffc30B;
+  padding: 0 1rem;
+  border-left: 3px solid #202a44;
+  margin: 0;
 }
 .accordion summary {
-  background-color: #ffc30B;
-  border-radius: 3px;
-  color: #fff;
-  list-style: none;
-  padding-left: 10px;
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+.accordion summary:hover {
+  padding-left: 1.4rem;
 }
 .accordion summary::-webkit-details-marker {
   display: none; /* REMOVE DROP-DOWN ARROW SYMBOL */
