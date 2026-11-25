@@ -1,10 +1,16 @@
 /* BASIC WEB ELEMENT DESIGNS */
+html {
+  font-size: 16px;
+}
 * {
   box-sizing: border-box;
   line-height: 1.5;
 }
+p {
+  font-size: 1rem;
+}
 body {
-  font-family: "Segoe UI", Roboto, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   margin: 0;
   background: #f4f7fb;
   color: #253238;
@@ -39,9 +45,17 @@ section {
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
 /* HEADING DESIGNS */
-section h2 {
+h1 {
+  font-family: Verdana, Helvetica, sans-serif;
   margin-top: 0;
   color: #202a44;
+  font-size: 2.5rem;
+}
+h2 {
+  font-family: Verdana, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #202a44;
+  font-size: 1.875rem;
 }
 /* SKIP LINK DESIGN */
 .skip-link {

@@ -11,7 +11,7 @@ class MainFooter extends HTMLElement {
 		   <li><a href="https://www.linkedin.com/in/julianamaybush/" aria-label="Visit my LinkedIn Profile" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt=""></a></li>
 		</ul>
         </nav>
-        <p>&copy; 2026 Juliana Bush. All rights reserved.</p>
+        <p>Copyright &copy; 2026 Juliana Bush. All rights reserved.</p>
       </footer>
     `;
   }

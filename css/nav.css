@@ -24,8 +24,71 @@ main-nav {
   color: #ffc30B;
   font-weight: 600;
 }
+.main-nav .icon {
+  display: none;
+}
 /* LINK DESIGN FOR HOVER AND KEYBOARD USERS */
 .main-nav a:hover, .main-nav a:focus-visible, .main-nav a.active {
   color: #000;
   background: #fff;
+}
+/* HAMBURGER BUTTON */
+.menu-toggle {
+  display: none;
+  color: #202a44;
+  background: #fff;
+  border: 2px solid #ffc30b;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* HAMBURGER HOVER AND FOCUS */
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+  color: #000;
+  background: #fff;
+}
+
+.menu-toggle:focus-visible {
+  outline: 3px solid #ffc30b;
+  outline-offset: 3px;
+}
+/* RESPONSIVE NAVIGATION */
+@media screen and (max-width: 600px) {
+
+  .main-nav {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  /* DISPLAY HAMBURGER */
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* HIDE NAVIGATION LINKS BY DEFAULT */
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 6px;
+    padding-top: 12px;
+  }
+
+  /* SHOW LINKS WHEN MENU IS EXPANDED */
+  .main-nav.responsive ul {
+    display: flex;
+  }
+
+  .main-nav li {
+    width: 100%;
+  }
+
+  .main-nav a {
+    text-align: center;
+  }
 }

@@ -35,3 +35,20 @@ main-footer {
 .main-footer a:focus-visible {
   background: transparent;
 }
+/* RESPONSIVE FOOTER */
+@media screen and (max-width: 300px) {
+  .main-footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .main-footer li {
+    width: 100%;
+  }
+
+  .main-footer a {
+    text-align: center;
+  }
+}
