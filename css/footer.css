@@ -6,6 +6,13 @@ footer {
   font-size: 0.9rem;
   color: #ffc30B;
 }
+footer h2 {
+  color: #ffc30B;
+  padding-bottom: 0;
+}
+footer h2::after {
+  display: none;
+}
 main-footer {
   text-align: center;
   background: #202a44;

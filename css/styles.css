@@ -32,6 +32,7 @@ main a {
   text-decoration: underline;
   color: #202a44;
   border-radius: 4px;
+  text-underline-offset: 3px; /* INCREASE READABILITY OF LINK */
 }
 main a:focus, main a:active, main a:focus-visible, main a:hover {
   background-color: #ffc30B;
@@ -56,6 +57,17 @@ h2 {
   margin-top: 0;
   color: #202a44;
   font-size: 1.875rem;
+  position: relative;
+  padding-bottom: 12px;
+}
+h2::after {
+  content: "";
+  background: #ffc30b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 50px;
 }
 /* SKIP LINK DESIGN */
 .skip-link {
@@ -73,4 +85,10 @@ h2 {
   padding: 12px 20px;
   background: #000;
   color: #fff;
+}
+/* SMOOTH SCROLLING AND REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
